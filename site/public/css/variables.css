@@ -1,0 +1,19 @@
+/* Fuente a utilizar MONTSERRAT*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap%27');
+
+:root{
+    /* Colores */
+    --fondo:#82fdfd;
+    --amarillo: #f7e43e;
+    --rosachicle: #f46c8c;
+    --marron: #7f7205;
+    --rosaviejo: #c8849a;
+    --beige: #e4dccc;
+    --caqui: #928406;
+    
+    /* Fuentes */
+    --font: 'Montserrat', sans-serif;
+}
+
+
+

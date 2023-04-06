@@ -1,0 +1,192 @@
+marquee{
+    background-color: var(--beige);
+    color: var(--marron);
+}
+
+.container{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .logo{
+    margin: 10px;
+    position: relative;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container .burger{
+    width: 10%;
+    background-color: var(--rosaviejo);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container .burger label{
+    font-size: 30px;
+    color: var(--beige);
+    
+}
+.container .burger nav{
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+    color: var(--rosachicle);
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+.container .burger nav ul li{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    line-height: 1;
+    color: var(--rosachicle);
+}
+.container .burger nav ul li a{
+    color: var(--rosaviejo);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 5px;
+    font-weight: 500;
+}
+.container .burger ul li:hover{
+        background-color: var(--beige);
+    }
+    .container .burger ul li:hover a{
+        color:var(--amarillo);
+    }
+
+.container .nav-desktop{
+    display: none;
+}
+/*DESPLEGABLE */
+.container .burger ul ul {    
+    top:100%;
+    left:0;
+    background-color: var(--marron);
+}
+/*ITEMS DESPLEGABLE*/
+.container .burger ul ul li {
+    width: 100%;
+    color: var(--beige);
+}
+/*ENLACE DESPLEGABLE*/
+.container .burger ul ul ul li a {
+    line-height: 100%;
+    padding: 10px 15px;
+}
+/*DESPLEGABLE HOVER*/
+.container .burger ul li:hover > ul {
+    display:block;
+}
+
+.container .ws a{
+    color: var(--marron);
+    font-size: 20px;
+    display: none;
+}
+
+@media(min-width:425px){
+    .container .burger input[type="checkbox"]{
+        display: none;
+    }
+    .container .burger input[type="checkbox"]:checked ~ nav{
+        display: none;
+    }
+
+}
+
+@media(min-width:768px){
+    .container{
+        background-color: var(--beige);
+        width: 100%;
+        padding: 10px;
+    }
+    .container .burger{
+        display: flex;
+        width: 100%;
+        border-top: solid 1px var(--dorado);
+    }
+    .container .burger label{
+        
+    }
+    .container .burger input[type="checkbox"]:checked ~ nav{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .container .burger ul{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: center;
+        list-style: none;
+    }
+    .container .burger nav li{
+        position: relative;
+    }
+    .container .burger nav li ul{
+        position: absolute;
+    }
+    .container .burger ul li {
+        text-align: center;
+        margin: 0 5px;
+    }
+    .container .burger ul li:hover{
+        background-color: var(--dorado);
+    }
+    .container .burger ul li:hover a{
+        color:white;
+    }
+    /*DESPLEGABLE */
+    .container .burger nav ul ul {
+        
+    }
+    /*ITEMS DESPLEGABLE*/
+    .container .burger nav ul ul li {
+        color: var(--dorado);
+        display: table-cell;
+    }
+    /*ENLACE DESPLEGABLE*/
+    .container .burger nav ul ul li a {
+        line-height: 1;
+    }
+    .container .burger nav ul li a{
+        color: var(--cyan);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 15px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 5px;
+        font-weight: 500;
+    }
+    /*DESPLEGABLE HOVER*/
+    .container .burger nav ul li:hover > ul {
+        display:block;
+    }
+}
+
+@media(min-width:1024px){
+    .container .menu{
+        display: flex;
+    }
+
+    .container .menu li a{
+        font-size: 20px;
+    }
+
+}
