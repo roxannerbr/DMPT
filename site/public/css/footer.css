@@ -18,6 +18,11 @@
     color: var(--marron);
 }
 
+.hilera-primer .columnas-links a:hover{
+    transform: scale(0.9);
+    color:var(--rosachicle)
+}
+
 .hilera-primer h6{
     color: var(--marron);
     margin: 10px;
@@ -34,6 +39,11 @@
 .hilera-primer .redes i{
     color: var(--marron);
     font-size: 25px;
+}
+
+.hilera-primer .redes i:hover{
+    transform: scale(0.8);
+    color: var(--rosachicle);
 }
 
 @media(min-width:768px){

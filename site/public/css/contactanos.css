@@ -37,3 +37,8 @@
     margin: 10px;
     padding: 5px;
 }
+
+.form button:hover{
+    color: var(--rosachicle);
+    transform: scale(1.3);
+}
