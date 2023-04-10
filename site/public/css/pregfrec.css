@@ -23,11 +23,13 @@
 .preg-Frec main form .form-floating small{
     color:var(--beige);
 }
+
 .preg-Frec main form .btn{
     width: 400px;
     color: var(--beige);
     background: var(--marron)
 }
+
 .preg-Frec main form .btn:hover{
     color: var(--rosachicle);
 }

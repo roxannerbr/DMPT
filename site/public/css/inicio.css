@@ -1,5 +1,50 @@
-.inicio main a{
-    background-color: var(--fondo);
+@keyframes rotarLogo {
+    0% {
+        -webkit-animation: rotate3d(0, 0, 1, 0deg);
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
 
-    
+    25% {
+        -webkit-animation: rotate3d(0, 0, 1, 90deg);
+        transform: rotate3d(0, 0, 1, 90deg);
+    }
+
+    50% {
+        -webkit-animation: rotate3d(0, 0, 1, 180deg);
+        transform: rotate3d(0, 0, 1, 180deg);
+    }
+
+    75% {
+        -webkit-animation: rotate3d(0, 0, 1, 270deg);
+        transform: rotate3d(0, 0, 1, 270deg);
+    }
+
+    100% {
+        -webkit-animation: rotate3d(0, 0, 1, 360deg);
+        transform: rotate3d(0, 0, 1, 360deg);
+    }
+}
+
+.inicio img{
+    border-style: none;
+    width: 38%;
+    margin-left: 8rem;
+    margin-top: 12rem;
+    animation: rotarLogo 10s normal linear infinite;
+}
+
+@media (min-width:768px){
+    .inicio img{
+        width: 20%;
+        margin-left: 20rem;
+        margin-top: 12rem;
+    }
+}
+
+@media (min-width:1024px){
+    .inicio img{
+        width: 20%;
+        margin-left: 27rem;
+        margin-top: 14rem;
+    }
 }

@@ -1,17 +1,17 @@
-main section {}
+.home section {}
 
-main section h4 {
+.home section h4 {
     color: var(--rosachicle);
     font-size: xx-large;
     background-color: var(--beige);
     text-align: center;    
 }
 
-main section h4:hover{
+.home section h4:hover{
     transform: scale(1.1);
 }
 
-main section article a img {
+.home section article a img {
     width: 95%;
     height: 100%;
     margin: 10px;
@@ -20,27 +20,27 @@ main section article a img {
     cursor: pointer;
 }
 
-main section article a img:hover{
+.home section article a img:hover{
     transform: scale(1.1);
 }
 
 @media(min-width:425px) {
 
-    main section {}
+    .home section {}
 
-    main section article a img {}
+    .home section article a img {}
 
 }
 
 @media (min-width:768px) {
 
-    main section {
+    .home section {
         display: flex;
         flex-direction: row;
         align-items: stretch;
     }
 
-    main section h4 {
+    .home section h4 {
         font-size: 23px;
         width: 85%;
         margin: 15px;
@@ -48,7 +48,7 @@ main section article a img:hover{
         border-radius: 5px;
     }
 
-    main section article a img {
+    .home section article a img {
         width: 88%;
         height: 70%;
     }
@@ -57,11 +57,11 @@ main section article a img:hover{
 
 @media (min-width:1024px) {
 
-    main section h4 {
+    .home section h4 {
         font-size: 30px;
     }
 
-    main section article a img {
+    .home section article a img {
         width: 88%;
         height: 70%;
     }
